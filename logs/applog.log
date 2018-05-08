@@ -1,0 +1,460 @@
+2018-05-08T16:00:30.506Z - info: start loading models
+2018-05-08T16:00:30.695Z - info: Connected to the db...
+2018-05-08T16:00:30.759Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:00:30.873Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:00:30.951Z - info: completed configuring express application
+2018-05-08T16:00:31.068Z - error: Failed to start the server SequelizeAccessDeniedError: ER_ACCESS_DENIED_ERROR: Access denied for user 'admin'@'localhost' (using password: YES)
+    at Handshake._callback (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:83:20)
+    at Handshake.Sequence.end (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.ErrorPacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:132:8)
+    at Protocol._parsePacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at ConnectionManager.connect (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:55:10)
+    at ConnectionManager.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Model.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/model.js:993:6)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1014:20
+From previous event:
+    at Function.each (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1013:20
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Sequelize.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1000:6)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:19:18)
+    at Module._compile (module.js:652:30)
+    at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+2018-05-08T16:03:18.606Z - info: start loading models
+2018-05-08T16:03:18.769Z - info: Connected to the db...
+2018-05-08T16:03:18.811Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:03:18.820Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:03:18.827Z - info: completed configuring express application
+2018-05-08T16:03:18.915Z - error: Failed to start the server SequelizeConnectionError: ER_BAD_DB_ERROR: Unknown database 'blog-dev'
+    at Handshake._callback (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:95:20)
+    at Handshake.Sequence.end (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.ErrorPacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:132:8)
+    at Protocol._parsePacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at ConnectionManager.connect (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:55:10)
+    at ConnectionManager.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Model.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/model.js:993:6)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1014:20
+From previous event:
+    at Function.each (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1013:20
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Sequelize.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1000:6)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:19:18)
+    at Module._compile (module.js:652:30)
+    at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+2018-05-08T16:03:43.738Z - info: start loading models
+2018-05-08T16:03:43.909Z - info: Connected to the db...
+2018-05-08T16:03:43.956Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:03:43.963Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:03:43.969Z - info: completed configuring express application
+2018-05-08T16:03:44.056Z - error: Failed to start the server SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:8080
+    at Handshake._callback (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:80:20)
+    at Handshake.Sequence.end (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Protocol.handleNetworkError (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:363:14)
+    at Connection._handleNetworkError (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/Connection.js:428:18)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+From previous event:
+    at ConnectionManager.connect (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:55:10)
+    at ConnectionManager.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Model.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/model.js:993:6)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1014:20
+From previous event:
+    at Function.each (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1013:20
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Sequelize.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1000:6)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:19:18)
+    at Module._compile (module.js:652:30)
+    at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+2018-05-08T16:14:20.710Z - info: start loading models
+2018-05-08T16:14:20.879Z - info: Connected to the db...
+2018-05-08T16:14:20.929Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:14:20.938Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:14:20.943Z - info: completed configuring express application
+2018-05-08T16:14:21.032Z - error: Failed to start the server SequelizeConnectionRefusedError: connect ECONNREFUSED 127.0.0.1:8080
+    at Handshake._callback (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:80:20)
+    at Handshake.Sequence.end (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Protocol.handleNetworkError (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:363:14)
+    at Connection._handleNetworkError (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/Connection.js:428:18)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9)
+From previous event:
+    at ConnectionManager.connect (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:55:10)
+    at ConnectionManager.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Model.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/model.js:993:6)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1014:20
+From previous event:
+    at Function.each (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1013:20
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Sequelize.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1000:6)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:19:18)
+    at Module._compile (module.js:652:30)
+    at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+2018-05-08T16:15:03.302Z - info: start loading models
+2018-05-08T16:15:03.473Z - info: Connected to the db...
+2018-05-08T16:15:03.517Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:15:03.527Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:15:03.534Z - info: completed configuring express application
+2018-05-08T16:15:03.625Z - error: Failed to start the server SequelizeConnectionError: ER_BAD_DB_ERROR: Unknown database 'blog-dev'
+    at Handshake._callback (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:95:20)
+    at Handshake.Sequence.end (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.ErrorPacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:132:8)
+    at Protocol._parsePacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at ConnectionManager.connect (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:55:10)
+    at ConnectionManager.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Model.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/model.js:993:6)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1014:20
+From previous event:
+    at Function.each (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1013:20
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Sequelize.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1000:6)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:19:18)
+    at Module._compile (module.js:652:30)
+    at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+2018-05-08T16:15:10.903Z - info: start loading models
+2018-05-08T16:15:11.075Z - info: Connected to the db...
+2018-05-08T16:15:11.120Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:15:11.129Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:15:11.137Z - info: completed configuring express application
+2018-05-08T16:15:11.227Z - error: Failed to start the server SequelizeConnectionError: ER_BAD_DB_ERROR: Unknown database 'blog-dev'
+    at Handshake._callback (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:95:20)
+    at Handshake.Sequence.end (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Sequence.js:88:24)
+    at Handshake.ErrorPacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/sequences/Handshake.js:132:8)
+    at Protocol._parsePacket (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:279:23)
+    at Parser.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Parser.js:76:12)
+    at Protocol.write (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/protocol/Protocol.js:39:16)
+    at Socket.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/mysql/lib/Connection.js:103:28)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+    at Socket.Readable.push (_stream_readable.js:208:10)
+    at TCP.onread (net.js:607:20)
+From previous event:
+    at ConnectionManager.connect (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/mysql/connection-manager.js:55:10)
+    at ConnectionManager.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/dialects/abstract/connection-manager.js:247:43)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Model.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/model.js:993:6)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1014:20
+From previous event:
+    at Function.each (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at /Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1013:20
+    at runCallback (timers.js:794:20)
+    at tryOnImmediate (timers.js:752:5)
+    at processImmediate [as _immediateCallback] (timers.js:729:5)
+From previous event:
+    at Promise.then (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/promise.js:21:17)
+    at Sequelize.sync (/Users/imac/Desktop/blog-restful-master/node_modules/sequelize/lib/sequelize.js:1000:6)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:19:18)
+    at Module._compile (module.js:652:30)
+    at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)
+    at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Function.Module.runMain (module.js:693:10)
+    at startup (bootstrap_node.js:188:16)
+    at bootstrap_node.js:609:3
+2018-05-08T16:17:05.328Z - info: start loading models
+2018-05-08T16:17:05.501Z - info: Connected to the db...
+2018-05-08T16:17:05.548Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:17:05.557Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:17:05.565Z - info: completed configuring express application
+2018-05-08T16:17:05.716Z - info: Application started on port  5003
+2018-05-08T16:29:43.016Z - info: start loading models
+2018-05-08T16:29:43.400Z - info: Connected to the db...
+2018-05-08T16:29:43.456Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:29:43.464Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:29:43.573Z - info: completed configuring express application
+2018-05-08T16:29:43.741Z - info: Application started on port  5003
+2018-05-08T16:29:58.259Z - info: start loading models
+2018-05-08T16:29:58.436Z - info: Connected to the db...
+2018-05-08T16:29:58.480Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:29:58.487Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:29:58.598Z - info: completed configuring express application
+2018-05-08T16:29:58.724Z - info: Application started on port  5003
+2018-05-08T16:46:21.677Z - info: About to create user  userName=Beelal, firstName=mynameiskhan, lastName=thisislastname
+2018-05-08T16:46:21.700Z - info: ::ffff:127.0.0.1 - - [08/May/2018:16:46:21 +0000] "POST /api/users/ HTTP/1.1" 200 218 "-" "PostmanRuntime/7.1.1"
+2018-05-08T16:46:45.310Z - info: ::ffff:127.0.0.1 - - [08/May/2018:16:46:45 +0000] "POST /api/users/ HTTP/1.1" 422 - "-" "PostmanRuntime/7.1.1"
+2018-05-08T16:58:55.158Z - info: start loading models
+2018-05-08T16:58:55.328Z - info: Connected to the db...
+2018-05-08T16:58:55.375Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T16:58:55.383Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T16:58:55.470Z - info: completed configuring express application
+2018-05-08T16:58:55.694Z - info: Application started on port  5003
+2018-05-08T16:59:12.399Z - info: About to create user  userName=waseeem, firstName=waseeee, lastName=test
+2018-05-08T16:59:12.422Z - info: ::ffff:127.0.0.1 - - [08/May/2018:16:59:12 +0000] "POST /api/users/ HTTP/1.1" 200 204 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:01:02.255Z - error: request /user not found
+2018-05-08T17:01:02.257Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:01:02 +0000] "GET /user HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:01:21.645Z - info: start loading models
+2018-05-08T17:01:21.814Z - info: Connected to the db...
+2018-05-08T17:01:21.856Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T17:01:21.863Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T17:01:21.945Z - info: completed configuring express application
+2018-05-08T17:01:22.076Z - info: Application started on port  5003
+2018-05-08T17:01:29.370Z - error: request / not found
+2018-05-08T17:01:29.376Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:01:29 +0000] "GET / HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:04:35.654Z - info: About to create user  userName=bilal, firstName=mail, lastName=test
+2018-05-08T17:04:35.674Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:04:35 +0000] "POST /api/users/ HTTP/1.1" 200 199 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:05:06.999Z - error: request / not found
+2018-05-08T17:05:07.000Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:05:07 +0000] "GET / HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:05:07.232Z - error: request / not found
+2018-05-08T17:05:07.234Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:05:07 +0000] "GET / HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:05:15.990Z - error: request /users not found
+2018-05-08T17:05:15.990Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:05:15 +0000] "GET /users HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:11:18.638Z - info: start loading models
+2018-05-08T17:11:18.813Z - info: Connected to the db...
+2018-05-08T17:11:18.856Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T17:11:18.864Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T17:11:18.944Z - info: completed configuring express application
+2018-05-08T17:11:19.075Z - info: Application started on port  5003
+2018-05-08T17:11:25.503Z - error: request /bilal not found
+2018-05-08T17:11:25.510Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:11:25 +0000] "GET /bilal HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:12:33.491Z - info: start loading models
+2018-05-08T17:12:33.669Z - info: Connected to the db...
+2018-05-08T17:12:33.713Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T17:12:33.720Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T17:12:33.725Z - info: completed configuring express application
+2018-05-08T17:12:33.824Z - info: Application started on port  5003
+2018-05-08T17:14:00.170Z - info: start loading models
+2018-05-08T17:14:00.342Z - info: Connected to the db...
+2018-05-08T17:14:00.386Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T17:14:00.394Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T17:14:00.481Z - info: completed configuring express application
+2018-05-08T17:14:00.609Z - info: Application started on port  5003
+2018-05-08T17:14:24.322Z - info: ::ffff:127.0.0.1 - - [08/May/2018:17:14:24 +0000] "GET /api/users HTTP/1.1" 200 625 "-" "PostmanRuntime/7.1.1"
+2018-05-08T17:30:07.468Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (28:4) date=Tue May 08 2018 22:30:07 GMT+0500 (PKT), pid=34874, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=76034048, heapTotal=59682816, heapUsed=28672648, external=360160, loadavg=[1.37451171875, 1.3759765625, 1.32958984375], uptime=291727, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (28:4), [0m [90m 26 | [39m    },  [90m 27 | [39m, [31m[1m>[22m[39m[90m 28 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 29 | [39m,  [90m 30 | [39m        winston[33m.[39minfo([32m'routes are loading ...'[39m)[33m;[39m,  [90m 31 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:31:29.543Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4) date=Tue May 08 2018 22:31:29 GMT+0500 (PKT), pid=34948, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=69652480, heapTotal=59158528, heapUsed=33900648, external=2357113, loadavg=[1.412109375, 1.35009765625, 1.32177734375], uptime=291809, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4), [0m [90m 27 | [39m    },  [90m 28 | [39m, [31m[1m>[22m[39m[90m 29 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 30 | [39m,  [90m 31 | [39m        winston[33m.[39minfo([32m'routes are loading ...'[39m)[33m;[39m,  [90m 32 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:34:05.553Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4) date=Tue May 08 2018 22:34:05 GMT+0500 (PKT), pid=35080, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=76931072, heapTotal=61779968, heapUsed=28121800, external=261246, loadavg=[1.4189453125, 1.4169921875, 1.35205078125], uptime=291965, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4), [0m [90m 27 | [39m    },  [90m 28 | [39m, [31m[1m>[22m[39m[90m 29 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 30 | [39m,  [90m 31 | [39m        winston[33m.[39minfo([32m'routes are loading ...'[39m)[33m;[39m,  [90m 32 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:34:34.277Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4) date=Tue May 08 2018 22:34:34 GMT+0500 (PKT), pid=35107, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=67391488, heapTotal=59641856, heapUsed=31557936, external=1291317, loadavg=[1.46728515625, 1.43701171875, 1.36083984375], uptime=291994, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4), [0m [90m 27 | [39m    },  [90m 28 | [39m, [31m[1m>[22m[39m[90m 29 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 30 | [39m,  [90m 31 | [39m        winston[33m.[39minfo([32m'routes are loading ...'[39m)[33m;[39m,  [90m 32 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:35:22.744Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4) date=Tue May 08 2018 22:35:22 GMT+0500 (PKT), pid=35157, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=68399104, heapTotal=60207104, heapUsed=33484184, external=1839348, loadavg=[1.04296875, 1.3271484375, 1.322265625], uptime=292042, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4), [0m [90m 27 | [39m    },  [90m 28 | [39m, [31m[1m>[22m[39m[90m 29 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 30 | [39m,  [90m 31 | [39m        winston[33m.[39minfo([32m'routes are loading ...'[39m)[33m;[39m,  [90m 32 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:37:51.443Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4) date=Tue May 08 2018 22:37:51 GMT+0500 (PKT), pid=35280, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=68845568, heapTotal=61255680, heapUsed=33160128, external=1291317, loadavg=[1.896484375, 1.48974609375, 1.380859375], uptime=292191, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4), [0m [90m 27 | [39m    },  [90m 28 | [39m, [31m[1m>[22m[39m[90m 29 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 30 | [39m,  [90m 31 | [39m        console[33m.[39mlog([32m'routes are loading ...'[39m)[33m;[39m,  [90m 32 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:37:58.004Z - error: uncaughtException: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4) date=Tue May 08 2018 22:37:58 GMT+0500 (PKT), pid=35282, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=69255168, heapTotal=61255680, heapUsed=33171448, external=1291317, loadavg=[1.82421875, 1.4814453125, 1.37841796875], uptime=292198, trace=[column=13, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$5.raise, line=4454, method=raise, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.unexpected, line=1761, method=unexpected, native=false, column=33, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp.expect, line=1749, method=expect, native=false, column=12, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseObj, line=3978, method=parseObj, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprAtom, line=3719, method=parseExprAtom, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprSubscripts, line=3494, method=parseExprSubscripts, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeUnary, line=3474, method=parseMaybeUnary, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseExprOps, line=3404, method=parseExprOps, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeConditional, line=3381, method=parseMaybeConditional, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$3.parseMaybeAssign, line=3344, method=parseMaybeAssign, native=false, column=24, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVar, line=2340, method=parseVar, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseVarStatement, line=2169, method=parseVarStatement, native=false, column=19, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseStatement, line=1861, method=parseStatement, native=false, column=21, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseBlockBody, line=2268, method=parseBlockBody, native=false, column=8, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.pp$1.parseTopLevel, line=1778, method=parseTopLevel, native=false, column=17, file=/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js, function=Parser.parse, line=1673, method=parse, native=false], stack=[SyntaxError: /Users/imac/Desktop/blog-restful-master/app/util/common.util.js: Unexpected token, expected , (29:4), [0m [90m 27 | [39m    },  [90m 28 | [39m, [31m[1m>[22m[39m[90m 29 | [39m    allRoutes[33m:[39m[36mfunction[39m allRoutes() {,  [90m    | [39m    [31m[1m^[22m[39m,  [90m 30 | [39m,  [90m 31 | [39m        console[33m.[39mlog([32m'routes are loading ...'[39m)[33m;[39m,  [90m 32 | [39m        let routePath [33m=[39m [32m'app/routes/**/*.routes.js'[39m[33m;[39m[0m,     at Parser.pp$5.raise (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:4454:13),     at Parser.pp.unexpected (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1761:8),     at Parser.pp.expect (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1749:33),     at Parser.pp$3.parseObj (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3978:12),     at Parser.pp$3.parseExprAtom (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3719:19),     at Parser.pp$3.parseExprSubscripts (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3494:19),     at Parser.pp$3.parseMaybeUnary (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3474:19),     at Parser.pp$3.parseExprOps (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3404:19),     at Parser.pp$3.parseMaybeConditional (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3381:19),     at Parser.pp$3.parseMaybeAssign (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:3344:19),     at Parser.pp$1.parseVar (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2340:24),     at Parser.pp$1.parseVarStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2169:8),     at Parser.pp$1.parseStatement (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1861:19),     at Parser.pp$1.parseBlockBody (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:2268:21),     at Parser.pp$1.parseTopLevel (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1778:8),     at Parser.parse (/Users/imac/Desktop/blog-restful-master/node_modules/babylon/lib/index.js:1673:17)]
+2018-05-08T17:38:51.098Z - error: uncaughtException: Cannot find module 'globe' date=Tue May 08 2018 22:38:51 GMT+0500 (PKT), pid=35325, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=69074944, heapTotal=59641856, heapUsed=34086184, external=1118866, loadavg=[1.75244140625, 1.51318359375, 1.39501953125], uptime=292251, trace=[column=15, file=module.js, function=Module._resolveFilename, line=547, method=_resolveFilename, native=false, column=25, file=module.js, function=Module._load, line=474, method=_load, native=false, column=17, file=module.js, function=Module.require, line=596, method=require, native=false, column=18, file=internal/module.js, function=require, line=11, method=null, native=false, column=1, file=/Users/imac/Desktop/blog-restful-master/app/util/common.util.js, function=null, line=4, method=null, native=false, column=30, file=module.js, function=Module._compile, line=652, method=_compile, native=false, column=5, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=loader, line=144, method=null, native=false, column=7, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=Object.require.extensions.(anonymous function) [as .js], line=154, method=js], native=false, column=32, file=module.js, function=Module.load, line=565, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=505, method=null, native=false, column=3, file=module.js, function=Module._load, line=497, method=_load, native=false, column=17, file=module.js, function=Module.require, line=596, method=require, native=false, column=18, file=internal/module.js, function=require, line=11, method=null, native=false, column=1, file=/Users/imac/Desktop/blog-restful-master/config/express.js, function=null, line=18, method=null, native=false, column=30, file=module.js, function=Module._compile, line=652, method=_compile, native=false, column=5, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=loader, line=144, method=null, native=false], stack=[Error: Cannot find module 'globe',     at Function.Module._resolveFilename (module.js:547:15),     at Function.Module._load (module.js:474:25),     at Module.require (module.js:596:17),     at require (internal/module.js:11:18),     at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/app/util/common.util.js:4:1),     at Module._compile (module.js:652:30),     at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5),     at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7),     at Module.load (module.js:565:32),     at tryModuleLoad (module.js:505:12),     at Function.Module._load (module.js:497:3),     at Module.require (module.js:596:17),     at require (internal/module.js:11:18),     at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/config/express.js:18:1),     at Module._compile (module.js:652:30),     at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)]
+2018-05-08T17:38:54.831Z - error: uncaughtException: Cannot find module 'globe' date=Tue May 08 2018 22:38:54 GMT+0500 (PKT), pid=35337, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=67723264, heapTotal=60719104, heapUsed=30951240, external=1055063, loadavg=[1.77197265625, 1.52099609375, 1.3984375], uptime=292254, trace=[column=15, file=module.js, function=Module._resolveFilename, line=547, method=_resolveFilename, native=false, column=25, file=module.js, function=Module._load, line=474, method=_load, native=false, column=17, file=module.js, function=Module.require, line=596, method=require, native=false, column=18, file=internal/module.js, function=require, line=11, method=null, native=false, column=1, file=/Users/imac/Desktop/blog-restful-master/app/util/common.util.js, function=null, line=4, method=null, native=false, column=30, file=module.js, function=Module._compile, line=652, method=_compile, native=false, column=5, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=loader, line=144, method=null, native=false, column=7, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=Object.require.extensions.(anonymous function) [as .js], line=154, method=js], native=false, column=32, file=module.js, function=Module.load, line=565, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=505, method=null, native=false, column=3, file=module.js, function=Module._load, line=497, method=_load, native=false, column=17, file=module.js, function=Module.require, line=596, method=require, native=false, column=18, file=internal/module.js, function=require, line=11, method=null, native=false, column=1, file=/Users/imac/Desktop/blog-restful-master/config/express.js, function=null, line=18, method=null, native=false, column=30, file=module.js, function=Module._compile, line=652, method=_compile, native=false, column=5, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=loader, line=144, method=null, native=false], stack=[Error: Cannot find module 'globe',     at Function.Module._resolveFilename (module.js:547:15),     at Function.Module._load (module.js:474:25),     at Module.require (module.js:596:17),     at require (internal/module.js:11:18),     at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/app/util/common.util.js:4:1),     at Module._compile (module.js:652:30),     at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5),     at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7),     at Module.load (module.js:565:32),     at tryModuleLoad (module.js:505:12),     at Function.Module._load (module.js:497:3),     at Module.require (module.js:596:17),     at require (internal/module.js:11:18),     at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/config/express.js:18:1),     at Module._compile (module.js:652:30),     at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5)]
+2018-05-08T17:39:39.083Z - info: start loading models
+2018-05-08T17:39:39.320Z - info: Connected to the db...
+2018-05-08T17:39:39.381Z - info: completed configuring express application
+2018-05-08T17:39:39.537Z - info: Application started on port  5003
+2018-05-08T17:48:23.080Z - info: start loading models
+2018-05-08T17:48:23.087Z - error: uncaughtException: glob is not defined date=Tue May 08 2018 22:48:23 GMT+0500 (PKT), pid=35793, uid=501, gid=20, cwd=/Users/imac/Desktop/blog-restful-master, execPath=/usr/local/bin/node, version=v8.11.1, argv=[node, /Users/imac/Desktop/blog-restful-master/server.js], rss=70209536, heapTotal=58109952, heapUsed=36238368, external=2153061, loadavg=[1.685546875, 1.5634765625, 1.45556640625], uptime=292823, trace=[column=1, file=/Users/imac/Desktop/blog-restful-master/server.js, function=null, line=17, method=null, native=false, column=30, file=module.js, function=Module._compile, line=652, method=_compile, native=false, column=5, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=loader, line=144, method=null, native=false, column=7, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js, function=Object.require.extensions.(anonymous function) [as .js], line=154, method=js], native=false, column=32, file=module.js, function=Module.load, line=565, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=505, method=null, native=false, column=3, file=module.js, function=Module._load, line=497, method=_load, native=false, column=10, file=module.js, function=Module.runMain, line=693, method=runMain, native=false, column=22, file=/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js, function=null, line=154, method=null, native=false, column=30, file=module.js, function=Module._compile, line=652, method=_compile, native=false, column=10, file=module.js, function=Module._extensions..js, line=663, method=.js, native=false, column=32, file=module.js, function=Module.load, line=565, method=load, native=false, column=12, file=module.js, function=tryModuleLoad, line=505, method=null, native=false, column=3, file=module.js, function=Module._load, line=497, method=_load, native=false, column=10, file=module.js, function=Module.runMain, line=693, method=runMain, native=false, column=16, file=bootstrap_node.js, function=startup, line=188, method=null, native=false], stack=[ReferenceError: glob is not defined,     at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/server.js:17:1),     at Module._compile (module.js:652:30),     at loader (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:144:5),     at Object.require.extensions.(anonymous function) [as .js] (/Users/imac/Desktop/blog-restful-master/node_modules/babel-register/lib/node.js:154:7),     at Module.load (module.js:565:32),     at tryModuleLoad (module.js:505:12),     at Function.Module._load (module.js:497:3),     at Function.Module.runMain (module.js:693:10),     at Object.<anonymous> (/Users/imac/Desktop/blog-restful-master/node_modules/babel-cli/lib/_babel-node.js:154:22),     at Module._compile (module.js:652:30),     at Object.Module._extensions..js (module.js:663:10),     at Module.load (module.js:565:32),     at tryModuleLoad (module.js:505:12),     at Function.Module._load (module.js:497:3),     at Function.Module.runMain (module.js:693:10),     at startup (bootstrap_node.js:188:16)]
+2018-05-08T17:49:11.988Z - info: start loading models
+2018-05-08T17:49:12.224Z - info: Connected to the db...
+2018-05-08T17:49:12.288Z - info: completed configuring express application
+2018-05-08T17:49:12.297Z - info: models are loading ...
+2018-05-08T17:49:12.443Z - info: Application started on port  5003
+2018-05-08T17:49:58.211Z - info: start loading models
+2018-05-08T17:49:58.409Z - info: Connected to the db...
+2018-05-08T17:49:58.469Z - info: completed configuring express application
+2018-05-08T17:49:58.595Z - info: Application started on port  5003
+2018-05-08T18:05:19.873Z - error: request /api/users/Beelal not found
+2018-05-08T18:05:19.879Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:05:19 +0000] "GET /api/users/Beelal HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:06:01.390Z - error: request /api/users/ not found
+2018-05-08T18:06:01.391Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:06:01 +0000] "GET /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:06:03.848Z - error: request /api/users not found
+2018-05-08T18:06:03.849Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:06:03 +0000] "GET /api/users HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:06:08.036Z - error: request /api/users/ not found
+2018-05-08T18:06:08.036Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:06:08 +0000] "POST /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:06:20.572Z - info: start loading models
+2018-05-08T18:06:20.804Z - info: Connected to the db...
+2018-05-08T18:06:20.865Z - info: completed configuring express application
+2018-05-08T18:06:21.015Z - info: Application started on port  5003
+2018-05-08T18:06:30.824Z - error: request /api/users/ not found
+2018-05-08T18:06:30.830Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:06:30 +0000] "POST /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:10:16.010Z - error: request /api/users/ not found
+2018-05-08T18:10:16.011Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:10:16 +0000] "POST /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:10:40.146Z - error: request /api/users not found
+2018-05-08T18:10:40.147Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:10:40 +0000] "GET /api/users HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:10:58.090Z - error: request /api/users/ not found
+2018-05-08T18:10:58.090Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:10:58 +0000] "POST /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:11:09.225Z - error: request /api/user/ not found
+2018-05-08T18:11:09.226Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:11:09 +0000] "POST /api/user/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:11:09.477Z - error: request /api/user/ not found
+2018-05-08T18:11:09.478Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:11:09 +0000] "POST /api/user/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:11:39.473Z - error: request /api/user/ not found
+2018-05-08T18:11:39.473Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:11:39 +0000] "GET /api/user/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:11:39.892Z - error: request /api/user/ not found
+2018-05-08T18:11:39.893Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:11:39 +0000] "GET /api/user/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:11:55.703Z - error: request /api/users/ not found
+2018-05-08T18:11:55.704Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:11:55 +0000] "GET /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:12:02.815Z - error: request /api/users not found
+2018-05-08T18:12:02.816Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:12:02 +0000] "GET /api/users HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:12:17.391Z - info: start loading models
+2018-05-08T18:12:17.616Z - info: Connected to the db...
+2018-05-08T18:12:17.673Z - info: completed configuring express application
+2018-05-08T18:12:17.814Z - info: Application started on port  5003
+2018-05-08T18:12:27.949Z - error: request /api/users not found
+2018-05-08T18:12:27.955Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:12:27 +0000] "GET /api/users HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:12:54.723Z - error: request /api/users/ not found
+2018-05-08T18:12:54.724Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:12:54 +0000] "GET /api/users/ HTTP/1.1" 404 43 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:14:26.537Z - info: start loading models
+2018-05-08T18:14:26.702Z - info: Connected to the db...
+2018-05-08T18:14:26.746Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T18:14:26.753Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T18:14:26.761Z - info: completed configuring express application
+2018-05-08T18:14:26.895Z - info: Application started on port  5003
+2018-05-08T18:14:31.805Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:14:31 +0000] "GET /api/users/ HTTP/1.1" 200 625 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:14:32.244Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:14:32 +0000] "GET /api/users/ HTTP/1.1" 200 625 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:14:59.971Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:14:59 +0000] "GET /api/users/Beelal HTTP/1.1" 200 218 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:15:00.244Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:15:00 +0000] "GET /api/users/Beelal HTTP/1.1" 200 218 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:17:32.124Z - info: start loading models
+2018-05-08T18:17:32.298Z - info: Connected to the db...
+2018-05-08T18:17:32.345Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T18:17:32.352Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T18:17:32.458Z - info: completed configuring express application
+2018-05-08T18:17:32.583Z - info: Application started on port  5003
+2018-05-08T18:17:42.120Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:17:42 +0000] "GET /api/users/ HTTP/1.1" 200 625 "-" "PostmanRuntime/7.1.1"
+2018-05-08T18:28:12.881Z - info: start loading models
+2018-05-08T18:28:13.056Z - info: Connected to the db...
+2018-05-08T18:28:13.102Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/post.route.js
+2018-05-08T18:28:13.110Z - info: loading route  /Users/imac/Desktop/blog-restful-master/app/routes/user.route.js
+2018-05-08T18:28:13.225Z - info: completed configuring express application
+2018-05-08T18:28:13.364Z - info: Application started on port  5003
+2018-05-08T18:28:19.598Z - info: ::ffff:127.0.0.1 - - [08/May/2018:18:28:19 +0000] "GET /api/users/ HTTP/1.1" 200 625 "-" "PostmanRuntime/7.1.1"
